@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <title>GROCERGURU</title>
+</head>
+<body>
+    <main>
+        
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="./assests/Whitelogo.png" alt="logo"></a>
+            </div><div class="basket"><span id="cart-count">0</span><a href="#"><ion-icon style="font-size: 30px;" name="basket" ></ion-icon></a></div>
+            <div class="toggle"><ion-icon name="menu" class="toggle-icon" size="large"></ion-icon></div>
+            <ul class="menu">
+                <div class="cros"><ion-icon name="close" class="toggle-icon"></ion-icon></div>
+                <li class="pro-drop"><div class="dropdown">
+                    <ul>
+                        <li><a href="./products.html#DairyPro">Dairy Products</a></li>
+                        <li><a href="./products.html#MeatPro">Meat Products</a></li>
+                        <li><a href="./products.html#CosmeticPro">Cosmetics Products</a></li>
+                    </ul>
+                </div><a href="./products.html">Products</a></li>
+                <li><a href="./About-us.html">About us</a></li>
+                <li><a href="./contactus2.html">Contact</a></li>
+                <li><a href="./login-signup.html">Login</a></li>
+                <li class="basket"><span id="cart-count">0</span><a href="#"><ion-icon style="font-size: 30px;" name="basket" ></ion-icon></a></li>
+            </ul>
+        </nav>
+        <div class="cart-div">
+            <div class="cart-item">
+                <img src="./assests/ProductImages/DairyProducts/pr5.png" alt="" width="50px" height="auto">
+                <div class="cart-desc">
+                    <h3>Cottage Cheese (Newly Arrived)</h3>
+                    <p>Rs. 1,000/-</p>
+                </div>
+                <div class="delete">
+                    <ion-icon name="trash-outline" size="large"></ion-icon>
+                </div>
+            </div>
+            <div class="bottom">
+                <button>Place Order</button>
+                <button class="closeBtn" onclick="closeCartBox()">Close</button>
+            </div>
+        </div>
+        <!-- SLIDER -->
+    <div class="slider">
+       <div class="slider-cont">
+        <div class="img-cont slide slide1">
+            <div class="left"><h2>Choose Your <br><span>Healthy</span> Lifestyle.</h2><p>Presentation matters. Our fresh Vietnamese vegetable rolls </p> <button><a href="./products.html">SHOP</a></button></div>
+            <div class="right">
+                <img src="./assests/slider-bg-1.png" alt="">
+            </div>
+            <!-- <img  src="./assests/1697892834789.png" alt=""> -->
+        </div>
+        <div class="img-cont slide slide2">
+            <div class="left"><h2>Fresh Bread <br><span> Oatmeal</span> Crumble.</h2><p>First impression count. Our delightful oatmeal crumble. </p> <button><a href="./products.html">SHOP</a></button></div>
+            <div class="right">
+                <img src="./assests/slider-bg-2.png" alt="">
+            </div>
+            <!-- <img  src="./assests/1697892896317.png" alt=""> -->
+        </div>
+        <div class="img-cont slide slide2">
+            <div class="left"><h2>Embrace a <br><span>Healthy</span> Life.</h2><p>Appearance counts. Our luscious strawberry Shakes.</p> <button><a href="./products.html">SHOP</a></button></div>
+            <div class="right">
+                <img src="./assests/slider-bg-3.png" alt="">
+            </div>
+        <!-- <img  src="./assests/1697892940496.png" alt=""> -->
+        </div>
+       </div>
+       <div class="btn-div btn-div-slider">
+            <img src="./assests/icons8-arrow-button-100.png" onclick="prev()" alt="">
+            <img src="./assests/icons8-arrow-button-100.png"onclick="next()" alt="">
+    </div>
+    </div>
+    <!-- SLIDER ENDS -->
+        <!-- CATEGORY -->
+    <div class="categories">
+        <div class="category">
+            <img src="https://m2.alothemes.com/orfarm/media//catalog/category/Biscuits_Snack.jpg" alt="">
+            <h3>Buiscuit Snack</h3>
+            <p>18 items</p>
+        </div>
+        <div class="category">
+            <img src="https://m2.alothemes.com/orfarm/media//catalog/category/Fresh_Fruits_1.jpg" alt="">
+            <h3>Friuts</h3>
+            <p>18 items</p>
+        </div>
+        <div class="category">
+            <img src="https://m2.alothemes.com/orfarm/media//catalog/category/Vegetables_2.jpg" alt="">
+            <h3>Vegetables</h3>
+            <p>10 items</p>
+        </div>
+        <div class="category">
+            <img src="https://m2.alothemes.com/orfarm/media//catalog/category/Fresh_Bakery.jpg" alt="">
+            <h3>Bread</h3>
+            <p>8 items</p>
+        </div>
+        <div class="category">
+            <img src="https://m2.alothemes.com/orfarm/media//catalog/category/Fresh_Meat.jpg" alt="">
+            <h3>Meat</h3>
+            <p>18 items</p>
+        </div>
+    </div>
+        <!-- weekly section -->
+    <div class="offer-text">
+        <p>~  SPECIAL PRODUCTS  ~</p>
+        <h1>WEEKLY OFFER'S</h1>
+    </div>
+    <!-- CARD -->
+    <div class="card-cont specialPrd">
+
+        <div class="btn-div">
+            <img src="./assests/icons8-arrow-button-100.png" onclick="prevCard()" alt="">
+            <img src="./assests/icons8-arrow-button-100.png" onclick="nextCard()" alt="">
+    </div>
+</div>
+<p style="text-align: center;">Discover thousands of other quality products. <a style="text-decoration: none;" href="./products.html"><span style="color: #DA0037;">Shop All Products >></span></a></p>
+    <div class="pro-premium">
+        <div class="left"><img src="https://m2.alothemes.com/orfarm/media/wysiwyg/product-detail-media_1.png" alt=""></div>
+        <div class="right"><h1><span>Organic Drinks</span>
+          <br> <span style="color: #DA0037;">Easy Healthy</span><span> - Happy Life</span></h1>
+          <p>The natural energy drink made solely from ripe fruits. Enjoy a revitalizing blend of sun-kissed berries, citrus, and tropical delights, providing a pure, refreshing energy boost without artificial additives.</p>
+          <div class="ingredients">
+            <table>
+                <tr>
+                    <th>FRESH FRUITS</th>
+                    <th>INGREDIENTS</th>
+                </tr>
+                <tr>
+                    <td>Apples, Berries & Cherries</td>
+                    <td>Energy, Protein, Sugars</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>EXPIRY DATE:</th>
+                    <th>BOOTLE SIZE:</th>
+                </tr>
+                <tr>
+                    <td>See on The Bottle Cap</td>
+                    <td>500ml - 1000ml</td>
+                </tr>
+            </table>
+          </div>
+          <div class="btn-add">
+            <button class="addBtnHome">ADD TO CART</button>
+            <button>VIEW MORE</button>
+          </div>
+        </div>
+    </div>
+    <div class="offer-cont">
+        <div class="offer offer-one"><div class="content">
+        <p>TOP OFFERS</p>
+        <h3>Eat Green <br>
+            Best For Family</h3>
+        <p>Free Shipping 05km</p>
+        </div></div>
+        <div class="offer offer-two"><div class="content">
+        <p>WEEKEND DEALS</p>
+        <h3>Fresh Food <br>Restore Health</h3>
+        <p>Top Quality Products</p>
+        </div></div>
+        <div class="offer offer-three"><div class="content">
+        <p>TOP SELLER</p>
+        <h3>Healthy <br>  Fresh Free Bread</h3>
+        <p>Limited Time: Online Only!</p>
+        </div></div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>GrocerGuru</h4>
+                    <ul>
+                        <li><a href="#">products</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online store</h4>
+                    <ul>
+                        <li><a href="#">dairy</a></li>
+                        <li><a href="#">households</a></li>
+                        <li><a href="#">food</a></li>
+                        <li><a href="#">my cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+ 
+
+    <script src="./script.js">
+    </script>
+    <script src="./pro-script.js">
+    </script>
+</body>
+</html>

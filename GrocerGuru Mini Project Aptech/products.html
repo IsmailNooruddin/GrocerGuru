@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <title>GROCERGURU - Products</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="./assests/Whitelogo.png" alt="logo"></a>
+            </div><div class="basket"><span id="cart-count">0</span><a href="#"><ion-icon style="font-size: 30px;" name="basket" ></ion-icon></a></div>
+            <div class="toggle"><ion-icon name="menu" class="toggle-icon"></ion-icon></div>
+            <ul class="menu">
+                <div class="cros"><ion-icon name="close" class="toggle-icon"></ion-icon></div>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About-us.html">About us</a></li>
+                <li><a href="./contactus2.html">Contact</a></li>
+                <li><a href="./login-signup.html">Login</a></li>
+                <li class="basket"><span id="cart-count">0</span><a href="#"><ion-icon style="font-size: 30px;" name="basket" ></ion-icon></a></li>
+            </ul>
+        </nav>
+        <div class="cart-div">
+            <div class="cart-item">
+                <img src="./assests/ProductImages/DairyProducts/pr5.png" alt="" width="50px" height="auto">
+                <div class="cart-desc">
+                    <h3>Sour Cheese</h3>
+                    <p>Rs. 1,000/-</p>
+                </div>
+                <div class="delete">
+                    <ion-icon name="trash-outline" size="large"></ion-icon>
+                </div>
+            </div>
+            <div class="bottom">
+                <button>Place Order</button>
+                <button class="closeBtn" onclick="closeCartBox()">Close</button>
+            </div>
+        </div>
+        <div class="navigator">
+        <p>Home > Products > <span>All Products</span></p>
+    </div>
+    <h1>Dairy Products:</h1>
+        <div class="card-cont dairy" id="DairyPro">    
+        </div>
+        <h1>Meat Products:</h1>
+            <div class="card-cont meat" id="MeatPro">
+            </div>
+            <h1>Cosmetic Products:</h1>
+                <div class="card-cont cosmetic" id="CosmeticPro">
+                </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>GrocerGuru</h4>
+                    <ul>
+                        <li><a href="#">products</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online store</h4>
+                    <ul>
+                        <li><a href="#">dairy</a></li>
+                        <li><a href="#">households</a></li>
+                        <li><a href="#">food</a></li>
+                        <li><a href="#">my cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   <script src="./pro-script.js"></script>
+</body>
+</html>

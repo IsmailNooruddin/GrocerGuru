@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="login-signup.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>GROCERGURU - Sign Up / Sign In</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="./index.html"><img src="./assests/Whitelogo.png" alt="logo"></a>
+        </div>
+        <div class="toggle"><ion-icon name="menu" class="toggle-icon"></ion-icon></div>
+        <ul class="menu">
+            <div class="cros"><ion-icon name="close" class="toggle-icon"></ion-icon></div>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About-us.html">About us</a></li>
+            <li><a href="./contactus2.html">Contact</a></li>
+            <li class="basket"><a href="#"><ion-icon style="font-size: 30px;" name="basket" ></ion-icon></a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <!-- --------login----------->
+                    <input type="submit" value="Login" class="btn1">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <!-- --------signup--------- -->
+                    <input type="submit" value="Sign up" class="btn1">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                </form>
+            </div>
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Member of GrocerGuru?</h3>
+                        <p>Join the grocery revolution - it's time to explore, shop, and save! Log into your account now and let the culinary adventure begin.</p>
+                        <!-- --------signin-------- -->
+                        <button class="btn2" id="sign-in-btn">Sign in</button>
+                    </div>
+                    <img src="undraw_empty_cart_co35__1_-removebg-preview.png" alt="" class="image">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>New to GrocerGuru?</h3>
+                        <p>Unlock a world of fresh flavors and convenient shopping. Join us in building your dream pantry - create your account today!</p>
+                        <!-- --------signup--------- -->
+                        <button class="btn2" id="sign-up-btn">Sign up</button>
+                    </div>
+                    <img src="undraw_shopping_app_flsj__1_-removebg-preview.png" alt="" class="image">
+                </div>
+            </div>
+        </div>
+        <script src="login-signup.js"></script>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>GrocerGuru</h4>
+                    <ul>
+                        <li><a href="#">products</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online store</h4>
+                    <ul>
+                        <li><a href="#">dairy</a></li>
+                        <li><a href="#">households</a></li>
+                        <li><a href="#">food</a></li>
+                        <li><a href="#">my cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</div>
+</body>
+</html>
